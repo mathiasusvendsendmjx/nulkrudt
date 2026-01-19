@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="mx-auto max-w-5xl px-6 py-24">
+    <!-- OVERSKRIFT -->
+    <h1 class="heading text-3xl mb-12">Alternativt fyrværkeri udtænkt i 3D</h1>
+
+    <!-- GRID -->
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 gap-12
+             items-center border p-8"
+    >
+      <!-- TEKST -->
+      <div class="max-w-xl">
+        <p class="body text-sm leading-relaxed mb-6">
+          Lysshow istedet for krudt. En interaktiv 3D-demonstration på hvordan
+          et nytår uden traditionelt fyrværkeri kunne se ud.
+        </p>
+
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border px-4 py-2 text-sm underline"
+        >
+          Spil oplevelsen →
+        </a>
+      </div>
+
+      <!-- BILLEDE -->
+      <div class="w-full overflow-hidden">
+        <img
+          src="/billeder/3d.png"
+          alt="Alternativt fyrværkeri i 3D"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </section>
+  </main>
+</Layout>

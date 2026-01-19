@@ -1,0 +1,349 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="mx-auto max-w-7xl px-6 relative">
+    <!-- HERO -->
+    <section class="flex flex-col items-center bg-white pt-40 pb-24">
+      <div
+        class="bg-yellow-200 border-4 border-white px-8 py-12 text-center max-w-4xl"
+      >
+        <p class="display text-2xl sm:text-3xl md:text-4xl leading-tight">
+          En forening der har til formål at oplyse og bekæmpe privat forbrug af
+          fyrværkeri
+        </p>
+      </div>
+
+      <p class="heading text-sm sm:text-base mt-6 max-w-xl text-center">
+        Støt op om arbejdet for et tryggere, roligere og mere ansvarligt nytår
+        for mennesker, dyr og miljø.
+      </p>
+    </section>
+
+    <!-- 1️⃣ HERO + FACTS + 2027 -->
+    <section class="flex flex-col items-center text-center pb-12 mt-28">
+      <!-- TIMER -->
+      <div
+        id="timer"
+        class="display tracking-tight text-5xl sm:text-6xl md:text-[100px]"
+      >
+        0d 0h 0m 0s
+      </div>
+
+      <!-- CAPTION -->
+      <p class="mt-4 max-w-md heading text-sm sm:text-base">
+        siden fyrværkeri på nytårsaften 2026 var årsagen til:
+      </p>
+
+      <!-- FACT GRID -->
+      <div class="mt-16 w-full max-w-5xl">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="border p-6 bg-yellow-200 text-center">
+            <div class="text-2xl font-semibold">227</div>
+            <p class="mt-2 text-sm">Behandlet på skadestue</p>
+          </div>
+
+          <div class="border p-6 bg-yellow-200 text-center">
+            <div class="text-2xl font-semibold">Tusindvis</div>
+            <p class="mt-2 text-sm">Mennesker oplevede utryghed</p>
+          </div>
+
+          <div class="border p-6 bg-yellow-200 text-center">
+            <div class="text-2xl font-semibold">5–10 gange</div>
+            <p class="mt-2 text-sm">Øget luftforurening på én aften</p>
+          </div>
+
+          <div class="border p-6 bg-yellow-200 text-center">
+            <div class="text-2xl font-semibold">Tusindvis</div>
+            <p class="mt-2 text-sm">Vilde dyr og kæledyr forstyrret</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2027 SPØRGSMÅL -->
+      <div class="mt-42">
+        <h2 class="heading text-xl sm:text-2xl">
+          hvordan kan vi fejre nytår trygt og rart i 2027?
+        </h2>
+      </div>
+    </section>
+
+    <!-- 2️⃣ FEATURE ARTICLE -->
+    <section class="relative">
+      <a href="/3D" class="group block border overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <!-- TEKST -->
+          <div class="p-8 flex flex-col justify-center">
+            <p class="mb-2 text-xs uppercase tracking-wide text-neutral-500">
+              Feature
+            </p>
+
+            <h3 class="heading text-xl sm:text-2xl mb-4">
+              Alternativt fyrværkeri udtænkt i 3D
+            </h3>
+
+            <p class="body text-sm mb-6 max-w-md">
+              En interaktiv 3D-oplevelse, hvor du selv kan udforske mere rolige,
+              sikre og bæredygtige måder at fejre nytår på.
+            </p>
+
+            <span class="text-sm underline"> Prøv selv → </span>
+          </div>
+
+          <!-- BILLEDE -->
+          <div class="overflow-hidden">
+            <img
+              src="/billeder/3d.png"
+              alt="Alternativt fyrværkeri i 3D"
+              class="h-full w-full object-cover transition-transform"
+            />
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- 3️⃣ NYHEDER -->
+    <section class="py-24">
+      <!-- HEADER -->
+      <div
+        class="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+      >
+        <h2 class="text-2xl sm:text-3xl heading">Nyheder</h2>
+
+        <div class="flex flex-wrap gap-2 text-xs">
+          <button class="border px-3 py-1">Alle</button>
+          <button class="border px-3 py-1 bg-green-200">Klima</button>
+          <button class="border px-3 py-1 bg-blue-200">Dyr</button>
+          <button class="border px-3 py-1 bg-orange-200">Mennesker</button>
+          <button class="border px-3 py-1 bg-red-200">Skader</button>
+        </div>
+      </div>
+
+      <!-- NEWS GRID -->
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <article class="border p-6 bg-green-100">
+          <p class="mb-2 text-xs uppercase">Klima</p>
+          <h3 class="heading text-lg sm:text-xl mb-2">
+            Fyrværkeri gør naturen til losseplads
+          </h3>
+          <p class="body text-sm">
+            En gennemgang af CO₂-udledning, affald og kemiske rester efter
+            nytår.
+          </p>
+        </article>
+
+        <article class="border p-6 bg-blue-100">
+          <p class="mb-2 text-xs uppercase">Dyr</p>
+          <h3 class="heading text-lg sm:text-xl mb-2">
+            Nytåret er årets mest stressende døgn for mange dyr
+          </h3>
+          <p class="body text-sm">
+            Dyreværn rapporterer markant stigning i bortløbne dyr.
+          </p>
+        </article>
+
+        <article class="border p-6 bg-red-100">
+          <p class="mb-2 text-xs uppercase">Skader</p>
+          <h3 class="heading text-lg sm:text-xl mb-2">
+            Skadestuer under pres nytårsnat
+          </h3>
+          <p class="body text-sm">
+            Flere akutte skader relateret til fyrværkeri end sidste år.
+          </p>
+        </article>
+
+        <article class="border p-6 bg-orange-100">
+          <p class="mb-2 text-xs uppercase">Mennesker</p>
+          <h3 class="heading text-lg sm:text-xl mb-2">
+            Fem råd til en nytårsaften med PTSD
+          </h3>
+          <p class="body text-sm">
+            Hjælp til at gøre nytårsaften til en hyggelig og tryg oplevelse for
+            PTSD-ramte veteraner.
+          </p>
+        </article>
+      </div>
+
+      <div class="mt-12">
+        <a
+          href="/nyheder"
+          class="block w-full border px-6 py-3 text-sm text-left"
+        >
+          Vis flere nyheder
+        </a>
+      </div>
+    </section>
+
+    <!-- FORTÆL DIN HISTORIE + ANDRES HISTORIER -->
+    <section class="pb-24">
+      <!-- HEADER -->
+      <div class="mb-8">
+        <h2 class="heading text-3xl mb-2">Fortæl din historie</h2>
+        <p class="body text-sm text-neutral-600 max-w-xl">
+          Del din oplevelse af nytår. Vælg en farve der passer til din historie.
+        </p>
+      </div>
+
+      <!-- SKRIV DIN HISTORIE (FULL WIDTH) -->
+      <div class="border p-6 mb-16">
+        <input
+          type="text"
+          placeholder="Overskrift på din historie"
+          class="w-full mb-4 border-b pb-2 text-sm focus:outline-none"
+        />
+
+        <textarea
+          rows="4"
+          placeholder="Skriv din historie her..."
+          class="w-full mb-6 border p-3 text-sm resize-none focus:outline-none"
+        ></textarea>
+
+        <div
+          class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <!-- FARVEVALG -->
+          <div class="flex flex-wrap gap-2 text-xs">
+            <label class="cursor-pointer">
+              <input type="radio" name="type" class="peer hidden" />
+              <span
+                class="border px-3 py-1 bg-green-200 peer-checked:ring-2 peer-checked:ring-black"
+              >
+                Klima
+              </span>
+            </label>
+
+            <label class="cursor-pointer">
+              <input type="radio" name="type" class="peer hidden" />
+              <span
+                class="border px-3 py-1 bg-blue-200 peer-checked:ring-2 peer-checked:ring-black"
+              >
+                Dyr
+              </span>
+            </label>
+
+            <label class="cursor-pointer">
+              <input type="radio" name="type" class="peer hidden" />
+              <span
+                class="border px-3 py-1 bg-orange-200 peer-checked:ring-2 peer-checked:ring-black"
+              >
+                Mennesker
+              </span>
+            </label>
+
+            <label class="cursor-pointer">
+              <input type="radio" name="type" class="peer hidden" />
+              <span
+                class="border px-3 py-1 bg-red-200 peer-checked:ring-2 peer-checked:ring-black"
+              >
+                Skader
+              </span>
+            </label>
+          </div>
+
+          <button class="border px-4 py-2 text-sm underline">
+            Del din historie →
+          </button>
+        </div>
+      </div>
+
+      <!-- FOLKS HISTORIER -->
+      <section class="pt-16 pb-24">
+        <!-- HEADER -->
+        <div class="mb-12">
+          <h2 class="heading text-3xl mb-2">Folks historier</h2>
+          <p class="body text-sm text-neutral-600 max-w-xl">
+            Personlige fortællinger fra mennesker, der oplevede konsekvenserne
+            af nytår på egen krop – direkte eller indirekte.
+          </p>
+        </div>
+
+        <!-- HISTORIE GRID -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <!-- HISTORIE -->
+          <article class="border p-8 bg-blue-100">
+            <span class="inline-block mb-3 text-xs uppercase">Dyr</span>
+            <h3 class="heading text-xl mb-3">
+              Min hund nægtede at gå udenfor i flere dage
+            </h3>
+            <p class="body text-sm leading-relaxed">
+              Nytårsaften er blevet årets værste dag hjemme hos os. Selv længe
+              efter fyrværkeriet stopper, er frygten der stadig.
+            </p>
+          </article>
+
+          <article class="border p-8 bg-red-100">
+            <span class="inline-block mb-3 text-xs uppercase">Mennesker</span>
+            <h3 class="heading text-xl mb-3">
+              Jeg endte på skadestuen klokken to om natten
+            </h3>
+            <p class="body text-sm leading-relaxed">
+              En raket væltede midt i menneskemængden. Det gik stærkt – og
+              gjorde uoprettelig skade.
+            </p>
+          </article>
+
+          <article class="border p-8 bg-green-100">
+            <span class="inline-block mb-3 text-xs uppercase">Klima</span>
+            <h3 class="heading text-xl mb-3">
+              Jeg anede ikke hvor slemt det stod til
+            </h3>
+            <p class="body text-sm leading-relaxed">
+              Før jeg så mængden af affald dagen efter nytår, havde jeg aldrig
+              tænkt over konsekvenserne.
+            </p>
+          </article>
+
+          <article class="border p-8 bg-orange-100">
+            <span class="inline-block mb-3 text-xs uppercase">Samfund</span>
+            <h3 class="heading text-xl mb-3">
+              Nytår føles ikke trygt i mit kvarter længere
+            </h3>
+            <p class="body text-sm leading-relaxed">
+              Hærværk, højlydt affyring og utryghed gør, at vi holder os
+              indenfor hele aftenen.
+            </p>
+          </article>
+        </div>
+
+        <!-- CALL TO ACTION -->
+      </section>
+    </section>
+
+    <!-- TIMER SCRIPT -->
+    <script>
+      const startDate = new Date("2026-01-01T00:00:00");
+
+      function updateTimer() {
+        const now = new Date();
+        const diff = now - startDate;
+
+        const seconds = Math.floor(diff / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+
+        const timer = document.getElementById("timer");
+        if (timer) {
+          timer.textContent = `${days}d ${hours % 24}h ${minutes % 60}m ${seconds % 60}s`;
+        }
+      }
+
+      const thumb = document.getElementById("scroll-thumb");
+
+      function updateScrollProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+
+        const progress = (scrollTop / docHeight) * 100;
+        thumb.style.height = `${progress}%`;
+      }
+
+      window.addEventListener("scroll", updateScrollProgress);
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    </script>
+  </main>
+</Layout>

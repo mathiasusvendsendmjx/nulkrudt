@@ -1,0 +1,28 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<header class="w-full fixed top-0 z-50 pr-2 bg-white border-b border-black">
+  <div class="mx-auto max-w-7xl px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo (større) -->
+      <div class="w-32">
+        <Logo />
+      </div>
+
+      <!-- Navigation (tættere, helt til højre) -->
+      <nav
+        class="p-1 flex items-center gap-6
+         whitespace-nowrap
+         text-xs sm:text-xs md:text-base
+         heading
+         border bg-white"
+      >
+        <a href="/3D">Fyrværkeri Alternativ</a>
+        <a href="/nyheder">Nyheder</a>
+        <a href="#one">Folks Historier</a>
+        <a href="#four">Om os</a>
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Barrio – display / UI */
+@font-face {
+  font-family: "Barrio";
+  src: url("/fonts/Barrio-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Grotesk – headings */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Source Sans 3 – body text */
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.display {
+  font-family: "Barrio", cursive;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.body-text {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* Hide scrollbar but allow scroll */
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Scrollbar track */
+#scroll-track {
+  position: fixed;
+  top: 30%;
+  right: 62px;
+  width: 6px;
+  height: 60%;
+  background: transparent;
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+/* Scroll progress fill */
+#scroll-thumb {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: black;
+  transition: height 0.1s linear;
+}

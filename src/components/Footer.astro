@@ -1,0 +1,75 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<footer class="mt-40 bg-yellow-200 border-t border-black">
+  <div class="mx-auto max-w-7xl px-6 py-16">
+    <h2
+      class="display text-3xl sm:text-3xl md:text-3xl leading-tight mb-12 max-w-5xl"
+    >
+      Støt og vær med til at skabe forandring
+      <br />
+      der gør en reel forskel.
+    </h2>
+
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 text-sm body">
+      <div>
+
+        <p class="max-w-xs">
+          NYTÅR MED NUL KRUDT sætter fokus på konsekvenserne af fyrværkeri og viser
+          alternative måder at fejre nytår på.
+        </p>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-3 uppercase tracking-wide">Udforsk</p>
+        <ul class="space-y-2">
+          <li><a href="/nyheder" class="underline">Nyheder</a></li>
+          <li><a href="/3D" class="underline">3D-oplevelse</a></li>
+          <li><a href="/hensyn" class="underline">Hensyn</a></li>
+          <li><a href="/om-os" class="underline">Om os</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-3 uppercase tracking-wide">Vær med</p>
+        <ul class="space-y-2">
+          <li>
+            <a href="/fortael-din-historie" class="underline"
+              >Fortæl din historie</a
+            >
+          </li>
+          <li><a href="/nyheder" class="underline">Læs andres historier</a></li>
+          <li><a href="/kontakt" class="underline">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-3 uppercase tracking-wide">
+          Bliv en del af bevægelsen
+        </p>
+
+        <p class="mb-4 max-w-xs">
+          Del din oplevelse og vær med til at ændre måden vi fejrer nytår på.
+        </p>
+
+        <a
+          href="/fortael-din-historie"
+          class="inline-block border border-black px-4 py-2 hover:bg-black hover:text-yellow-200 transition"
+        >
+          Fortæl din historie →
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="mt-24 pt-6 border-t border-black flex flex-col sm:flex-row gap-4 sm:justify-between text-xs"
+    >
+      <p>© {new Date().getFullYear()} NYTÅR MED NUL KRUDT</p>
+      <div class="flex gap-4">
+        <a href="/privatliv" class="underline">Privatliv</a>
+        <a href="/kontakt" class="underline">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</footer>
